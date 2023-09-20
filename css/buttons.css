@@ -1,0 +1,116 @@
+.buttons {
+  width: 100%;
+
+  & .setting {
+    height: 65px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    & .select {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 100%;
+
+      & span {
+        font-size: 10px;
+        line-height: 10px;
+        text-align: center;
+
+      }
+    }
+
+    & .select+.select {
+      margin-left: 16px;
+    }
+  }
+
+  & .buy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin-top: 16px;
+    width: 100%;
+    cursor: pointer;
+    height: 50px;
+    border-radius: 16px;
+    border: 0px;
+    padding: 0;
+    background: var(--price-color);
+    color: var(--white-color);
+    font-size: 30px;
+    line-height: 29px;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
+
+.custom-select {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin-top: 2px;
+  background: white;
+  border-radius: 15px;
+
+  & .selected-option {
+    cursor: pointer;
+    text-align: center;
+    width: 100%;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 21px;
+  }
+
+  & .options {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 130px;
+    overflow-y: auto;
+    border-radius: 16px;
+    z-index: 1;
+    /* Чтобы опции перекрывали остальное содержимое */
+    background-color: white;
+
+    /* Цвет фона опций */
+    & .flex {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-inline: 16px;
+
+
+    }
+
+    & .flex-option {
+      width: 100%;
+    }
+
+    & .option {
+      padding: 5px;
+      cursor: pointer;
+      width: 100%;
+
+      &:hover {
+        background-color: #f0f0f0;
+      }
+    }
+  }
+}
+
+
+
+
+
+.option:hover {
+
+  /* Цвет фона при наведении */
+}

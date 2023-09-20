@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+  box-sizing: border-box;
+  background: rgb(0, 0, 0, 0.5);
+  font-family: Gotham Pro;
+}
+
+:root {
+
+  --header-color: #F19D2F;
+  --underHeader-color: #FFD1AC;
+  --text-color: #2C2B31;
+  --price-color: #37D997;
+  --line-through-color: #E27500;
+  --white-color: white;
+}
+p {
+  margin: 0;
+}
+@font-face {
+  font-family: "Gotham Pro";
+  src: url('font/gothampro.ttf');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+.container {
+  height: 1096px;
+  max-width: 390px;
+  margin-inline: auto;
+  background: #F0F0F0;
+}
+
+
+
